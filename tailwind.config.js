@@ -2,6 +2,14 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    // Breakpoints alinhados ao pedido do desafio: Mobile (até 480px),
+    // Tablet (768px) e Desktop (992px+)
+    screens: {
+      sm: "480px",
+      md: "768px",
+      lg: "992px",
+      xl: "1280px",
+    },
     extend: {
       colors: {
         primary: "#64748B",
