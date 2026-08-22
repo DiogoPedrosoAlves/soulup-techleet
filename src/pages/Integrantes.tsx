@@ -10,7 +10,7 @@ export default function Integrantes() {
     <Layout>
       <section className="mx-auto max-w-6xl px-4 py-12 text-center">
         <h2 className="mb-8 font-sans text-3xl">Nossa Equipe:</h2>
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="flex flex-wrap justify-center gap-6 lg:gap-10">
           {membros.map((membro) => (
             <MembroCard key={membro.id} membro={membro} />
           ))}

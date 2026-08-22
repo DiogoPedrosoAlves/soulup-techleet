@@ -14,7 +14,7 @@ export default function Solucao() {
           Conheça as duas frentes que compõem a solução Avatar Inteligente da
           SoulUp.
         </p>
-        <div className="flex flex-wrap justify-center gap-6">
+        <div className="flex flex-wrap justify-center gap-6 lg:gap-10">
           {solucoes.map((solucao) => (
             <SolucaoCard key={solucao.id} solucao={solucao} />
           ))}

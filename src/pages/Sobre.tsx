@@ -7,9 +7,9 @@ export default function Sobre() {
 
   return (
     <Layout>
-      <section className="mx-auto max-w-5xl px-4 py-12">
+      <section className="mx-auto max-w-5xl px-4 py-12 lg:max-w-6xl lg:py-20">
         <h2 className="mb-8 text-center font-sans text-3xl">Sobre o Projeto:</h2>
-        <div className="grid gap-10 md:grid-cols-2">
+        <div className="grid gap-10 md:grid-cols-2 lg:gap-16">
           {solucoes.map((solucao) => (
             <div key={solucao.id}>
               <h3 className="mb-3 font-sans text-xl">{solucao.titulo}</h3>

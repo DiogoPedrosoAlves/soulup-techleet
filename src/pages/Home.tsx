@@ -32,11 +32,11 @@ export default function Home() {
       </div>
 
       {/* Avatar Inteligente */}
-      <section className="mx-auto flex max-w-5xl flex-col items-center gap-8 px-4 py-16 md:flex-row">
+      <section className="mx-auto flex max-w-5xl flex-col items-center gap-8 px-4 py-16 md:flex-row lg:max-w-6xl lg:gap-16 lg:py-24">
         <img
           src="/imagens/AvatarSoulUp.png"
           alt="Avatar SoulUp"
-          className="h-48 w-48 rounded-full object-cover"
+          className="h-48 w-48 rounded-full object-cover lg:h-64 lg:w-64"
         />
         <div>
           <h3 className="mb-3 font-sans text-2xl">Avatar Inteligente</h3>
