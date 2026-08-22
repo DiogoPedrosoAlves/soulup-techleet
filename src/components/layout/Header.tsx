@@ -24,59 +24,72 @@ export default function Header() {
   }, [location.pathname]);
 
   return (
-    <header className="flex items-center justify-between">
-      <div>
+    <header>
+      {/* Barra superior: logo + botão hamburguer (mobile) + menu inline (desktop) */}
+      <div className="flex items-center justify-between px-4 sm:px-8">
         <Link to="/">
-          <h1 className="px-4 py-6 font-sans text-xl sm:px-8 sm:text-3xl">
+          <h1 className="py-6 font-sans text-xl sm:text-3xl">
             Avatar Inteligente
           </h1>
         </Link>
-      </div>
 
-      {/* Botão hamburguer - visível apenas em telas menores (md:hidden) */}
-      <button
-        type="button"
-        aria-label="Abrir menu"
-        aria-controls="navegacao"
-        aria-expanded={menuAberto}
-        onClick={() => setMenuAberto((aberto) => !aberto)}
-        className="mr-5 flex h-6 w-8 flex-col justify-between md:hidden"
-      >
-        <span
-          className={`block h-[3px] w-full rounded bg-white transition-transform ${
-            menuAberto ? "translate-y-[10.5px] rotate-45" : ""
-          }`}
-        />
-        <span
-          className={`block h-[3px] w-full rounded bg-white transition-opacity ${
-            menuAberto ? "opacity-0" : ""
-          }`}
-        />
-        <span
-          className={`block h-[3px] w-full rounded bg-white transition-transform ${
-            menuAberto ? "-translate-y-[10.5px] -rotate-45" : ""
-          }`}
-        />
-      </button>
-
-      <div
-        id="navegacao"
-        className={`w-full overflow-hidden transition-all duration-300 md:mr-12 md:w-auto md:overflow-visible ${
-          menuAberto ? "max-h-80" : "max-h-0 md:max-h-none"
-        }`}
-      >
-        <nav className="flex flex-col bg-secondary md:flex-row md:gap-10 md:bg-transparent">
+        {/* Menu inline - visível apenas em telas médias/grandes (768px+) */}
+        <nav className="hidden md:flex md:gap-10">
           {linksNavegacao.map((link) => (
             <Link
               key={link.to}
               to={link.to}
-              className="border-t border-primary px-5 py-4 font-sans text-base transition-colors hover:text-white md:border-none md:p-2 md:text-sm"
+              className="font-sans text-sm transition-colors hover:text-white"
             >
               {link.label}
             </Link>
           ))}
         </nav>
+
+        {/* Botão hamburguer - visível apenas abaixo de 768px, sempre fixo no canto direito */}
+        <button
+          type="button"
+          aria-label={menuAberto ? "Fechar menu" : "Abrir menu"}
+          aria-controls="navegacao-mobile"
+          aria-expanded={menuAberto}
+          onClick={() => setMenuAberto((aberto) => !aberto)}
+          className="flex h-6 w-8 shrink-0 flex-col justify-between md:hidden"
+        >
+          <span
+            className={`block h-[3px] w-full rounded bg-white transition-transform ${
+              menuAberto ? "translate-y-[10.5px] rotate-45" : ""
+            }`}
+          />
+          <span
+            className={`block h-[3px] w-full rounded bg-white transition-opacity ${
+              menuAberto ? "opacity-0" : ""
+            }`}
+          />
+          <span
+            className={`block h-[3px] w-full rounded bg-white transition-transform ${
+              menuAberto ? "-translate-y-[10.5px] -rotate-45" : ""
+            }`}
+          />
+        </button>
       </div>
+
+      {/* Menu suspenso (dropdown) - bloco independente, abaixo da barra superior, só no mobile */}
+      <nav
+        id="navegacao-mobile"
+        className={`w-full overflow-hidden bg-secondary transition-all duration-300 md:hidden ${
+          menuAberto ? "max-h-80" : "max-h-0"
+        }`}
+      >
+        {linksNavegacao.map((link) => (
+          <Link
+            key={link.to}
+            to={link.to}
+            className="block border-t border-primary px-5 py-4 font-sans text-base transition-colors hover:text-white"
+          >
+            {link.label}
+          </Link>
+        ))}
+      </nav>
     </header>
   );
 }
