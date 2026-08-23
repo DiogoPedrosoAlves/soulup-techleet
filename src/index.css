@@ -19,7 +19,11 @@
 /* Animação do carrossel de palavras da Home */
 @layer utilities {
   .animate-carrossel {
-    animation: carrossel 18s linear infinite;
+    animation: carrossel 32s linear infinite;
+  }
+
+  .animate-carrossel:hover {
+    animation-play-state: paused;
   }
 }
 

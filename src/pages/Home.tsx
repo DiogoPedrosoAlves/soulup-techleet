@@ -1,9 +1,7 @@
 import Layout from "../components/layout/Layout";
 import AvatarCustomizer from "../components/avatar/AvatarCustomizer";
+import WordCarousel from "../components/ui/WordCarousel";
 import { usePageTitle } from "../hooks/usePageTitle";
-
-const palavrasCarrossel =
-  "Avatar_Inteligente Inovação Modelagem Criatividade Diversidade";
 
 export default function Home() {
   usePageTitle("Home");
@@ -23,13 +21,7 @@ export default function Home() {
         </div>
       }
     >
-      {/* Carrossel de palavras */}
-      <div className="overflow-hidden bg-secondary-dark py-4">
-        <div className="flex w-max animate-carrossel gap-8 whitespace-nowrap font-sans text-sm text-text-footer">
-          <span>{palavrasCarrossel}</span>
-          <span>{palavrasCarrossel}</span>
-        </div>
-      </div>
+      <WordCarousel />
 
       {/* Avatar Inteligente */}
       <section className="mx-auto flex max-w-5xl flex-col items-center gap-8 px-4 py-16 md:flex-row lg:max-w-6xl lg:gap-16 lg:py-24">
