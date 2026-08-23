@@ -83,13 +83,11 @@ npm run preview
 
 ## Link do repositório
 
-> Substituir pelo link do repositório GitHub do grupo:
-> `https://github.com/<usuario>/<repositorio>`
+ `[https://github.com/DiogoPedrosoAlves/soulup-techleet-2-semestre]`
 
 ## Link do vídeo (YouTube)
 
-> Substituir pelo link do vídeo de apresentação do projeto:
-> `https://youtube.com/...`
+ `https://youtube.com/...`
 
 ## Integrantes
 
