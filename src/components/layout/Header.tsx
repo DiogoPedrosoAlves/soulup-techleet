@@ -24,7 +24,7 @@ export default function Header() {
   }, [location.pathname]);
 
   return (
-    <header>
+    <header className="relative z-50">
       {/* Barra superior: logo + botão hamburguer (mobile) + menu inline (desktop) */}
       <div className="flex items-center justify-between px-4 sm:px-8">
         <Link to="/">
@@ -73,10 +73,11 @@ export default function Header() {
         </button>
       </div>
 
-      {/* Menu suspenso (dropdown) - bloco independente, abaixo da barra superior, só no mobile */}
+      {/* Menu suspenso (dropdown) - posicionado em overlay (absolute) sobre o conteúdo
+          da página, para não empurrar/afetar o layout que vem abaixo do header */}
       <nav
         id="navegacao-mobile"
-        className={`w-full overflow-hidden bg-secondary transition-all duration-300 md:hidden ${
+        className={`absolute inset-x-0 top-full w-full overflow-hidden bg-secondary shadow-lg transition-all duration-300 md:hidden ${
           menuAberto ? "max-h-80" : "max-h-0"
         }`}
       >
