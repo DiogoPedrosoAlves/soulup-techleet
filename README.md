@@ -83,7 +83,7 @@ npm run preview
 
 ## Link do repositório
 
- `[https://github.com/DiogoPedrosoAlves/soulup-techleet-2-semestre]`
+ `[GitHub](https://github.com/DiogoPedrosoAlves/soulup-techleet)`
 
 ## Link do vídeo (YouTube)
 
