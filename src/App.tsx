@@ -20,7 +20,9 @@ export default function App() {
       <Route path="/contato" element={<Contato />} />
       <Route path="/solucao" element={<Solucao />} />
 
-      
+      {/* Rotas dinâmicas (useParams) */}
+      <Route path="/integrantes/:id" element={<MembroDetalhe />} />
+      <Route path="/solucao/:id" element={<SolucaoDetalhe />} />
 
       {/* Fallback */}
       <Route path="*" element={<NotFound />} />
