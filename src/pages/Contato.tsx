@@ -4,7 +4,7 @@ import { usePageTitle } from "../hooks/usePageTitle";
 
 export default function Contato() {
   usePageTitle("Contato");
-
+ // interface de contato do front
   return (
     <Layout>
       <section className="mx-auto flex max-w-5xl flex-col gap-12 px-4 py-12 md:flex-row">
