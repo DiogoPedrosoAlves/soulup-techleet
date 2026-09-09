@@ -99,7 +99,7 @@ npm run preview
 | <img src="public/imagens/pedro.jpeg" width="60" />  | Pedro Henrique Toledo Sampaio | 571707 | 1TDSR | [GitHub](https://github.com/PedroSampaio20)      | [LinkedIn](https://www.linkedin.com/in/pedro-sampaio2002/)             |
 | <img src="public/imagens/felipe.jpeg" width="60" /> | Felipe Ferreira Amado         | 572567 | 1TDSR | [GitHub](https://github.com/FelipeFerreiraAmado) | [LinkedIn](https://www.linkedin.com/in/felipe-amado/)                  |
 
-As fotos de cada integrante também aparecem na página **Integrantes** e no perfil individual de cada membro (`/integrantes/:id`)..
+As fotos de cada integrante também aparecem na página **Integrantes** e no perfil individual de cada membro (`/integrantes/:id`).
 
 ## Imagens e ícones do projeto
 
