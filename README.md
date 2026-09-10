@@ -83,11 +83,11 @@ npm run preview
 
 ## Link do repositório
 
-[GitHub](https://github.com/DiogoPedrosoAlves/soulup-techleet)
+`https://github.com/DiogoPedrosoAlves/soulup-techleet`
 
 ## Link do vídeo (YouTube)
 
-`https://youtube.com/...`
+`https://youtu.be/hh29Rvpot1c`
 
 ## Integrantes
 
