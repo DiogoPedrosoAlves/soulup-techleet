@@ -3,7 +3,7 @@ import ContatoForm from "../components/formularios/ContatoForm";
 import { usePageTitle } from "../hooks/usePageTitle";
 
 export default function Contato() {
-  usePageTitle("Contato");
+  usePageTitle("Contato", "/imagens/IconeTelefone.png");
  // interface de contato do front
   return (
     <Layout>

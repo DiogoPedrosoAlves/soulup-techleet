@@ -3,7 +3,7 @@ import { usePageTitle } from "../hooks/usePageTitle";
 import { solucoes } from "../data/solucoes";
 
 export default function Sobre() {
-  usePageTitle("Sobre");
+  usePageTitle("Sobre", "/imagens/IconeUser.png");
 
   return (
     <Layout>
