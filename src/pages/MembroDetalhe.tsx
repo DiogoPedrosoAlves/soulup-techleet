@@ -22,7 +22,7 @@ export default function MembroDetalhe() {
   if (!membro) {
     return (
       <Layout>
-        <section className="mx-auto max-w-xl px-4 py-16 text-center">
+        <section className="mx-auto max-w-xl px-4 py-16 text-center ">
           <h2 className="mb-4 font-sans text-2xl">Integrante não encontrado</h2>
           <p className="mb-6 font-sans text-text-footer">
             Não encontramos nenhum integrante com o identificador "{id}".
@@ -67,7 +67,7 @@ export default function MembroDetalhe() {
               LinkedIn
             </a>
           </div>
-          <Button variante="secundaria" onClick={() => navigate("/integrantes")}>
+          <Button variante="secundaria" onClick={() => navigate("/integrantes")} className="text-[#64748B]">
             ← Voltar para a equipe
           </Button>
         </Card>
