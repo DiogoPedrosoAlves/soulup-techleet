@@ -12,7 +12,7 @@ export default function MembroDetalhe() {
 
   const membro = membros.find((item) => item.id === id);
 
-  usePageTitle(membro ? membro.nome : "Integrante não encontrado", "/imagens/IconeUser.png");
+  usePageTitle(membro ? membro.nome : "/imagens/IconeUser.png");
 
   // Sempre que o parâmetro da rota mudar, rola a página para o topo
   useEffect(() => {

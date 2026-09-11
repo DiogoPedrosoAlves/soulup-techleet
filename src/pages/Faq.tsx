@@ -8,7 +8,7 @@ export default function Faq() {
 
   return (
     <Layout>
-      <section className="px-4 py-12">
+      <section className="px-4 py-12 min-h-screen flex flex-col">
         <h2 className="mb-8 text-center font-sans text-3xl">
           Perguntas frequentes
         </h2>

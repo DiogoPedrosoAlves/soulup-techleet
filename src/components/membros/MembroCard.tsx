@@ -10,7 +10,7 @@ export default function MembroCard({ membro }: MembroCardProps) {
   const navigate = useNavigate();
 
   return (
-    <Card className="flex w-60 max-w-full flex-col items-center gap-2 text-secondary">
+    <Card className=" px-0 flex w-60 max-w-full flex-col items-center gap-2 text-secondary">
       <img
         src={membro.foto}
         alt={membro.nome}

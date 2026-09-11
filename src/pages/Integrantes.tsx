@@ -4,11 +4,11 @@ import { usePageTitle } from "../hooks/usePageTitle";
 import { membros } from "../data/membros";
 
 export default function Integrantes() {
-  usePageTitle("Integrantes", "/imagens/IconeUser.png");
+  usePageTitle("/imagens/IconeUser.png");
 
   return (
     <Layout>
-      <section className="mx-auto max-w-6xl px-4 py-12 text-center">
+      <section className="mx-auto px-4 py-12 text-center">
         <h2 className="mb-8 font-sans text-3xl">Nossa Equipe:</h2>
         <div className="flex flex-wrap justify-center gap-6 lg:gap-10">
           {membros.map((membro) => (
