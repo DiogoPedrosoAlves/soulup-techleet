@@ -27,7 +27,7 @@ export default function Footer() {
         </div>
         <div className="flex items-center justify-center gap-2">
           <img
-            src="/imagens/email.png"
+            src="/imagens/emailPreto.png"
             alt="e-mail"
             className="h-5 w-5 rounded border-2 border-gray-300 bg-white"
           />

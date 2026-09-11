@@ -16,7 +16,7 @@ export default function Contato() {
             E-mail para mais informações
           </p>
           <div className="flex items-center gap-3 rounded-xl bg-white/5 p-4">
-            <img src="/imagens/email.png" alt="email" className="h-8 w-8" />
+            <img src="/imagens/emailBranco.png" alt="email" className="h-8 w-8" />
             <div>
               <h4 className="font-sans text-sm font-semibold">Contate em</h4>
               <p className="font-sans text-sm text-text-footer">
