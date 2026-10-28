@@ -67,7 +67,7 @@ export default function MembroDetalhe() {
               LinkedIn
             </a>
           </div>
-          <Button variante="secundaria" onClick={() => navigate("/integrantes")} className="text-[#64748C]">
+          <Button variante="secundaria" onClick={() => navigate("/integrantes")} className="text-[#64748B]">
             ← Voltar para a equipe
           </Button>
         </Card>
